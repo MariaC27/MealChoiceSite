@@ -39,10 +39,39 @@
   height: 30px;
 }
 
-.dietHidden{
+.diet{
   display: none;
 }
 
-.mealTypeHidden{
+.mealType{
+  display: none;
+}
+
+.sweetSavoryBreakfast {
+  display: none;
+}
+
+.sweetSavorySnack{
+  display: none;
+}
+
+
+.lunchItems {
+  display: none;
+}
+
+.time1Breakfast {
+  display: none;
+}
+
+.time1Dinner {
+  display: none;
+}
+
+.time2 {
+  display: none;
+}
+
+.time3 {
   display: none;
 }
