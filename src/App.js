@@ -150,43 +150,62 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+
+      
         <button id="startButton" onClick={startFunction}>Start</button>
 
+        <ul className="column">
         <button className="diet" onClick={mealChoiceFunction}>Standard</button>
         <button className="diet" onClick={mealChoiceFunction}>Vegan/Vegetarian</button>
         <button className="diet" onClick={mealChoiceFunction}>Kosher</button>
         <button className="diet" onClick={mealChoiceFunction}>Gluten Free / Lactose Free</button>
+        </ul>
         
+        <ul className="column">
         <button className="mealType" onClick={breakfastChoiceFunction}>Breakfast</button>
         <button className="mealType" onClick={lunchChoiceFunction}>Lunch</button>
         <button className="mealType" onClick={dinnerChoiceFunction}>Dinner</button>
         <button className="mealType" onClick={snackChoiceFunction}>Snack</button>
+        </ul>
 
+        <ul className="column">
         <button className="sweetSavoryBreakfast" onClick={sweetSavoryBreakfast}>Sweet</button>
         <button className="sweetSavoryBreakfast" onClick={sweetSavoryBreakfast}>Savory</button>
-
+        </ul>
        
+        <ul className="column">
         <button className="sweetSavorySnack" onClick={sweetSnack}>Sweet</button>
         <button className="sweetSavorySnack" onClick={savorySnack}>Savory</button>
+        </ul>
 
+        <ul className="column">
         <button className="lunchItems" onClick={soupFunction}>Soup</button>
         <button className="lunchItems" onClick={saladFunction}>Salad</button>
         <button className="lunchItems" onClick={sandwhichFunction}>Sandwhich</button>
+        </ul>
 
+        <ul className="column">
         <button className="time2" onClick={under15Function}>Under 15 minutes</button>
         <button className="time2" onClick={over15Function}>Over 15 minutes</button>
+        </ul>
 
+        <ul className="column">
         <button className="time1Breakfast" onClick={under30Breakfast}>Under 30 minutes</button>
         <button className="time1Breakfast" onClick={thirtysixtyBreakfast}>30-60 minutes</button>
         <button className="time1Breakfast" onClick={over60Breakfast}>Over 60 minutes</button>
+        </ul>
 
+        <ul className="column">
         <button className="time1Dinner" onClick={under30Dinner}>Under 30 minutes</button>
         <button className="time1Dinner" onClick={thirtysixtyDinner}>30-60 minutes</button>
         <button className="time1Dinner" onClick={over60Dinner}>Over 60 minutes</button>
+        </ul>
 
+        <ul className="column">
         <button className="time3" onClick={thirtysixtySoup}>30-60 minutes</button>
         <button className="time3" onClick={over60Soup}>Over 60 minutes</button>
-
+        </ul>
+      
         
       </header>
     </div>
