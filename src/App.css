@@ -43,6 +43,24 @@ h2{
   font-size: large;
   color: white;
   text-align: center;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.logo{
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 20px;
+  font-style: bold;
+}
+
+.intro{
+  display: block;
+  font-size: 17px;
+  color: black;
+  margin-top: 10px;
 }
 
 .clickStart{
@@ -62,6 +80,14 @@ h2{
 
 #recipe{
   display: none;
+  font-size: 30px;
+  margin-top: 50px;
+}
+
+.tryRecipe{
+  display: none;
+  font-size: 40px;
+  margin-top: 50px;
 }
 
 #startButton{

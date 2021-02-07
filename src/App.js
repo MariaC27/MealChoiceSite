@@ -32,6 +32,8 @@ const startFunction = () => {
   clearPrevious("clickStart")
   clearPrevious("miniDescription");
   clearPrevious("name");
+  clearPrevious("intro");
+  showNext("logo");
   showNext("chooseOptions");
   showNext("mealType");
 
@@ -72,6 +74,7 @@ const saladFunction = () => {
 const sweetSnack = () => {
   clearPrevious("sweetSavorySnack");
   clearPrevious("chooseOptions");
+  showNext("tryRecipe");
   showNext("sweetSnackLink");
   //recipe here
 }
@@ -79,6 +82,7 @@ const sweetSnack = () => {
 const savorySnack = () => {
   clearPrevious("sweetSavorySnack");
   clearPrevious("chooseOptions");
+  showNext("tryRecipe");
   showNext("savorySnackLink");
   //recipe here
 }
@@ -86,6 +90,7 @@ const savorySnack = () => {
 const under15Function = () => {
   clearPrevious("time2");
   clearPrevious("chooseOptions");
+  showNext("tryRecipe");
   showNext("under15Link");
   //recipe here
 }
@@ -93,6 +98,7 @@ const under15Function = () => {
 const over15Function = () => {
   clearPrevious("time2");
   clearPrevious("chooseOptions");
+  showNext("tryRecipe");
   showNext("over15Link");
   //recipe here
 }
@@ -101,6 +107,7 @@ const over15Function = () => {
 const under30Breakfast = () => {
   clearPrevious("time1Breakfast");
   clearPrevious("chooseOptions");
+  showNext("tryRecipe");
   showNext("under30Brek");
   //recipe here
 }
@@ -108,6 +115,7 @@ const under30Breakfast = () => {
 const thirtysixtyBreakfast = () => {
   clearPrevious("time1Breakfast");
   clearPrevious("chooseOptions");
+  showNext("tryRecipe");
   showNext("3060Brek");
   //recipe here
 }
@@ -115,6 +123,7 @@ const thirtysixtyBreakfast = () => {
 const over60Breakfast = () => {
   clearPrevious("time1Breakfast");
   clearPrevious("chooseOptions");
+  showNext("tryRecipe");
   showNext("60Brek");
   //recipe here
 }
@@ -122,6 +131,7 @@ const over60Breakfast = () => {
 const under30Dinner = () => {
   clearPrevious("time1Dinner");
   clearPrevious("chooseOptions");
+  showNext("tryRecipe");
   showNext("under30Dinner");
   //recipe here
 }
@@ -129,6 +139,7 @@ const under30Dinner = () => {
 const thirtysixtyDinner = () => {
   clearPrevious("time1Dinner");
   clearPrevious("chooseOptions");
+  showNext("tryRecipe");
   showNext("3060Dinner");
   //recipe here
 }
@@ -136,6 +147,7 @@ const thirtysixtyDinner = () => {
 const over60Dinner = () => {
   clearPrevious("time1Dinner");
   clearPrevious("chooseOptions");
+  showNext("tryRecipe");
   showNext("over60Dinner");
   //recipe here
 }
@@ -143,6 +155,7 @@ const over60Dinner = () => {
 const thirtysixtySoup = () => {
   clearPrevious("time3");
   clearPrevious("chooseOptions");
+  showNext("tryRecipe");
   showNext("3060soup");
   //recipe here 
 }
@@ -150,6 +163,7 @@ const thirtysixtySoup = () => {
 const over60Soup = () => {
   clearPrevious("time3");
   clearPrevious("chooseOptions");
+  showNext("tryRecipe");
   showNext("over60soup");
   //recipe here
 }
@@ -161,24 +175,28 @@ function App() {
       <header className="App-header">
 
         <h1 className="name">MyMealChoice</h1>
+        <h2 className="logo">MyMealChoice</h2>
         <h2 className="miniDescription">Welcome to the MyMealChoice, a website that helps you decide on what recipe to make for your meal! </h2>
+        <p className="intro">Developed by Maria Cristoforo, Dartmouth College '24, as part of FemmeHacks 2021</p>
 
         <p className="mainDescription">This website was developed to help the user (you!) decide what to eat or cook based on your personal preferences.  
           The goal is to avoid unhealthy eating and snacking because you cannot think of something to make. This 
           website will allow you to choose a series of meal preferences and conditions, such as type of meal (breakfast, lunch, etc), 
           style of food (sweet, savory, etc), and how much time you have to make it. After you make your preference selections, 
-          the website will recommend to you 2 recipes that you might try making! 
+          the website will recommend to you a recipe that you might try making! 
         </p>
 
         <p className="clickStart">Click the start button below to begin!</p>
 
         <button id="startButton" onClick={startFunction}>Start</button>
 
-        <p className="apology">Apologies that more dietary options could not be included, but each recipe specifies whether 
+        <p className="apology">Apologies that more dietary options were not included, but each recipe specifies whether 
           is it vegan, vegetarian, kosher, gluten free, or lactose free.
         </p>
 
         <p className="chooseOptions">Choose one of the options below:</p>
+
+        <p className="tryRecipe">Try this recipe! Click the link below.</p>
         
         <ul className="column">
         <button className="mealType" onClick={breakfastChoiceFunction}>Breakfast</button>
@@ -222,7 +240,7 @@ function App() {
         <a id="recipe" className="savorySnackLink" href="https://www.tasteofhome.com/recipes/soft-beer-pretzel-nuggets/">Pretzels</a>
         <img id="recipe" className="savorySnackLink" src="https://www.tasteofhome.com/wp-content/uploads/2018/05/Based_On_Soft-Beer-Pretzels_EXPS_THSO18_114654_D01_25_7b-6.jpg?resize=696,696" alt="pretzels"></img>
         
-        <a id="recipe" className="sweetSnackLink" href="https://www.gimmesomeoven.com/no-bake-energy-bites/">No-Bake Energy Bites</a>
+        <a target="_blank" id="recipe" className="sweetSnackLink" href="https://www.gimmesomeoven.com/no-bake-energy-bites/">No-Bake Energy Bites</a>
         <img id="recipe" className="sweetSnackLink" src="https://www.gimmesomeoven.com/wp-content/uploads/2012/02/Easy-No-Bake-Energy-Bites-Recipe-1100x1643.jpg" alt="energyBites"></img>
 
         <a id="recipe" className="under15Link" href="https://www.loveandlemons.com/greek-salad/">Greek Salad</a>
